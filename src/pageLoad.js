@@ -12,7 +12,6 @@ function initialPageLoad () {
             const content = document.getElementById('content');
 
             buttons.forEach(btn=>btn.style.color = '');
-
             btn.style.color = '#ffb366';
             content.innerHTML = '';
 
