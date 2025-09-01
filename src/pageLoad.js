@@ -1,5 +1,5 @@
 import createRestaurantHomePage from "./home";
-
+import createResaurantMenuPage from "./menu";
 function initialPageLoad () {
 
     const buttons = document.querySelectorAll("button");
@@ -12,7 +12,7 @@ function initialPageLoad () {
             const content = document.getElementById('content');
 
             buttons.forEach(btn=>btn.style.color = '');
-            
+
             btn.style.color = '#ffb366';
             content.innerHTML = '';
 
@@ -23,9 +23,10 @@ function initialPageLoad () {
 
             if(text === "Menu") {
                 document.getElementById('content').innerHTML = '';
+                createResaurantMenuPage();
             }
 
-            if(text === "Contact Us") {
+            if(text === "About Us") {
                 document.getElementById('content').innerHTML = '';
             }
         })
