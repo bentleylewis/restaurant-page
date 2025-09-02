@@ -1,4 +1,4 @@
-function createResaurantMenuPage() {
+function createRestaurantMenuPage() {
     const contentDiv = document.getElementById("content");
 
     const menuContainerDiv = document.createElement("div");
@@ -8,7 +8,7 @@ function createResaurantMenuPage() {
         Dinner: [
             { name: "Shepherd's Pie", description: "Classic comfort dish with beef, veggies, and mashed potatoes." },
             { name: "Chicken Parmesan", description: "Crispy breaded chicken topped with marinara and cheese." },
-            { name: "Burgers", description: "Juicy grilled patties served with fresh toppings." }
+            { name: "Smash Burger", description: "Juicy grilled patties served with fresh toppings." }
         ],
         Desserts: [
             { name: "Chocolate Cake", description: "Rich and moist with layers of chocolate goodness." },
@@ -50,4 +50,4 @@ function createResaurantMenuPage() {
     contentDiv.appendChild(menuContainerDiv);
 }
 
-export default createResaurantMenuPage;
+export default createRestaurantMenuPage;
