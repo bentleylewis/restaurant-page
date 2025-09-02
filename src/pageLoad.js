@@ -1,5 +1,7 @@
 import createRestaurantHomePage from "./home";
-import createResaurantMenuPage from "./menu";
+import createRestaurantMenuPage from "./menu";
+import createRestaurantAboutPage from "./aboutUs";
+
 function initialPageLoad () {
 
     const buttons = document.querySelectorAll("button");
@@ -22,11 +24,12 @@ function initialPageLoad () {
 
             if(text === "Menu") {
                 document.getElementById('content').innerHTML = '';
-                createResaurantMenuPage();
+                createRestaurantMenuPage();
             }
 
             if(text === "About Us") {
                 document.getElementById('content').innerHTML = '';
+                createRestaurantAboutPage();
             }
         })
     })
